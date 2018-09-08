@@ -64,7 +64,12 @@ class Main extends React.Component {
           </ul>
           {close}
         </article>
-
+        <article id="more" className={`${this.props.article === 'more' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+          <h2 className="major">More</h2>
+          <span className="image main"><img src={pic03} alt="" /></span>
+          <p>More name is Andrew Plater. I have been working with AWS and related services such as Slack for about three years. I hold an AWS Solutions Architect Associate certification and love to build serverless solutions to business problems.</p>
+          {close}
+        </article>
       </div>
     )
   }
