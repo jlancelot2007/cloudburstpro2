@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import pic01 from '../images/pic01.jpg'
 import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
+import pic04 from '../images/pic04.jpg'
 
 class Main extends React.Component {
   render() {
@@ -16,8 +17,17 @@ class Main extends React.Component {
         <article id="intro" className={`${this.props.article === 'intro' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Intro</h2>
           <span className="image main"><img src={pic01} alt="" /></span>
-          <p>Amazon Web Services are a great way to build your business in a secure, low cost, low maintenance environment that is highly available and highly scalable. With so many services to pick from, it can seem overwhelming to try and get started. What you need is a partner who can blend things together in a seamless way. By the way, check out my <a href="#work">awesome work</a>.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+          <p>My passion is to see the cloud useful to non tech organisations by using serverless solutions that integrate workflow.</p>
+          <p>In practical terms that may mean starting with a simple free hosted static website like this website or a dynamic blog website hosted for US$5 per month.</p>
+          <p>More complex solutions might involve:
+          <ul>
+          <li>user authentication</li>
+          <li>online video or audio</li>
+          <li>push notifications for user engagement</li>
+            <li>serverless online store with payments</li>
+            <li>integrations with Zoho, Slack, Zapier or Twilio</li>
+           <li>CI/CD documentation websites</li>
+          </ul>to discuss your obligation free requirements use the Contact form.</p>
           {close}
         </article>
 
@@ -66,7 +76,7 @@ class Main extends React.Component {
         </article>
         <article id="more" className={`${this.props.article === 'more' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">More</h2>
-          <span className="image main"><img src={pic03} alt="" /></span>
+          <span className="image main"><img src={pic04} alt="" /></span>
           <p>More name is Andrew Plater. I have been working with AWS and related services such as Slack for about three years. I hold an AWS Solutions Architect Associate certification and love to build serverless solutions to business problems.</p>
           {close}
         </article>
