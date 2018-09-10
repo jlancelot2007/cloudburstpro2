@@ -34,21 +34,23 @@ class Main extends React.Component {
         <article id="work" className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Work</h2>
           <span className="image main"><img src={pic02} alt="" /></span>
-          <p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-          <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+          <p>This website was built from a Gatsby version 2 template that is pushed to Github.com from my machine. From there it is autmatically rebuilt on the hosting site at Netlify.com.</p>
+          <p>Here is an example of a <a href="https://renewedlifefellowship.com.au/">node.js blogging site</a> hosted on Digital Ocean. Various templates are available to provide your styling preference.</p>
+          <p>I am looking to quickly build a portfolio of reference sites so I can go freelance. Contact me if you have a project that needs help.</p>
           {close}
         </article>
 
         <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">About</h2>
           <span className="image main"><img src={pic03} alt="" /></span>
-          <p>My name is Andrew Plater. I have been working with AWS and related services such as Slack for about three years. I hold an AWS Solutions Architect Associate certification and love to build serverless solutions to business problems.</p>
+          <p>My name is Andrew Plater. I have been working with AWS and related services such as Slack for about three years. Previously I worked in healthcare software development using the Microsoft stack. I hold an AWS Solutions Architect Associate certification and love to build serverless solutions to business problems.</p>
+         <p>Image files are Australian landscapes photographed by Ignacio Palacios. You can see more of his work <a href="http://www.australianphotography.com/news/ignacio-palacios-announces-new-exhibition-this-month">here</a>.</p>
           {close}
         </article>
 
         <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Contact</h2>
-          <form method="post" action="#">
+          <form method="post" action="#" netlify>
             <div className="field half first">
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" />
@@ -77,7 +79,9 @@ class Main extends React.Component {
         <article id="more" className={`${this.props.article === 'more' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">More</h2>
           <span className="image main"><img src={pic04} alt="" /></span>
-          <p>More name is Andrew Plater. I have been working with AWS and related services such as Slack for about three years. I hold an AWS Solutions Architect Associate certification and love to build serverless solutions to business problems.</p>
+          <p>If you have made it this far you must be keen to know more teechnical stuff.</p>
+          <p>For custom backend development I like to use the Serverless Framework with node.js and AWS to create graphQL APIs to Lambda functions that can interact with DynamoDB, step functions and SES.</p>
+          <p>Front end development with Vue.js</p>
           {close}
         </article>
       </div>

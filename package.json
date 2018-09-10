@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-dimension-v2",
-  "description": "Gatsby Starter - Dimension V2",
+  "name": "Cloudburstpro",
+  "description": "Cloudburstpro",
   "version": "1.0.0",
-  "author": "Hunter Chang",
+  "author": "Andrew Plater",
   "dependencies": {
     "gatsby": "next",
     "gatsby-plugin-manifest": "next",
