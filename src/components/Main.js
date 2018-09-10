@@ -80,7 +80,9 @@ class Main extends React.Component {
         <article id="more" className={`${this.props.article === 'more' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">More</h2>
           <span className="image main"><img src={pic04} alt="" /></span>
-          <p>If you have made it this far you must be keen to know more teechnical stuff.</p>
+          <p>If you have made it this far you must be keen to know more technical stuff.</p>
+          <p><a href="https://seo-hacker.com/google-lighthouse-extension/">Lighthouse</a> is a Google extension for measuring a website. Here are Lighthouse scores out of the box for the site i.e. no SEO headers or service workers (offline caching) have been added to improve the results. In short you get a performant, accessible, well architected, discoverable website on any device that can easily be further enhanced.</p>
+           <ul><li>Performance 93%</li><li>Progressive Web App 73%</li><li>Accessibility 100%</li><li>Best Practices 100%</li><li>SEO 89%</li></ul>
           <p>For custom backend development I like to use the Serverless Framework with node.js and AWS to create graphQL APIs to Lambda functions that can interact with DynamoDB, step functions and SES.</p>
           <p>Front end development with Vue.js</p>
           {close}
