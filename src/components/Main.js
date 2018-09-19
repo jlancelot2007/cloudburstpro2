@@ -27,6 +27,7 @@ class Main extends React.Component {
             <li>serverless online store with payments</li>
             <li>integrations with Zoho, Slack, MailChimp, Zapier or Twilio</li>
            <li>CI/CD documentation websites</li>
+           <li>Alexa skills</li>
           </ul>to discuss your obligation free requirements use the Contact form.</p>
          <p>You can find a list of substantial discounts on popular commercial software products available to non profit organisations here : 
           <a href="https://zapier.com/blog/best-nonprofit-discounts/">Discounts for Non Profits</a></p>
@@ -36,7 +37,7 @@ class Main extends React.Component {
         <article id="work" className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Work</h2>
           <span className="image main"><img src={pic02} alt="" /></span>
-          <p>This website was built from a Gatsby version 2 template that is pushed to Github.com from my machine. From there it is autmatically rebuilt on the hosting site at Netlify.com.</p>
+          <p>This website was built from a Gatsby version 2 template that is pushed to Github.com from my machine. From there it is automatically rebuilt on the hosting site at Netlify.com.</p>
           <p>Here is an example of a <a href="https://renewedlifefellowship.com.au/">node.js blogging site</a> hosted on Digital Ocean. Various templates are available to provide your styling preference.</p>
           <p>I am looking to quickly build a portfolio of reference sites so I can go freelance. Contact me if you have a project that needs help.</p>
           {close}

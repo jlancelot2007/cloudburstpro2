@@ -9,8 +9,8 @@ const Header = (props) => (
         <div className="content">
             <div className="inner">
                 <h1>Cloudburstpro</h1>
-                <p>Serverless cloud solutions</p>
-                <p><em>for business church or non profit organisation</em></p>
+                <p>Cloud power done well</p>
+                <p><em>website | ecommerce | app integration | event management | serverless solutions | Alexa skills</em></p>
             </div>
         </div>
         <nav>
