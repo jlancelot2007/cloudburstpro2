@@ -46,7 +46,10 @@ class Main extends React.Component {
         <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">About</h2>
           <span className="image main"><img src={pic03} alt="" /></span>
-          <p>My name is Andrew Plater. I have been working with AWS and related services such as Slack for about three years. Previously I worked in healthcare software development using the Microsoft stack. I hold an AWS Solutions Architect Associate certification and love to build serverless solutions to business problems.</p>
+          <p >Cloudburstpro Mission Statement:</p> <p><em id="mission">To help churches and nonprofit organisations use technology to achieve their purpose.</em></p>
+          <p>My name is Andrew Plater. I have been working with AWS and related services such as Slack for about three years. Previously I worked in healthcare software development for almost 20 years using the Microsoft stack. I hold an AWS Solutions Architect Associate certification and love to build serverless solutions to business problems.</p>
+         <p>Did you know that for the cost of an administration fee a nonprofit organisation can qualify for <a href="https://www.tt-exchange.org/product/8256/amazon-web-services-credits">$2000 credit for AWS services?</a> AWS has a free tier for 12 months and generous ongoing cost-free limits for many services. There are a large number of other service offers  from Microsoft, Slack, Zapier, Zoho among others at <a href="http://meet.techsoup.org/">TechSoup</a></p>
+         <p>Use the Contact form to start a discussion to see if I can help.</p>
          <p>Image files are Australian landscapes photographed by Ignacio Palacios. You can see more of his work <a href="http://www.australianphotography.com/news/ignacio-palacios-announces-new-exhibition-this-month">here</a>.</p>
           {close}
         </article>
