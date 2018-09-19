@@ -25,9 +25,11 @@ class Main extends React.Component {
           <li>online video or audio</li>
           <li>push notifications for user engagement</li>
             <li>serverless online store with payments</li>
-            <li>integrations with Zoho, Slack, Zapier or Twilio</li>
+            <li>integrations with Zoho, Slack, MailChimp, Zapier or Twilio</li>
            <li>CI/CD documentation websites</li>
           </ul>to discuss your obligation free requirements use the Contact form.</p>
+         <p>You can find a list of substantial discounts on popular commercial software products available to non profit organisations here : 
+          <a href="https://zapier.com/blog/best-nonprofit-discounts/">Discounts for Non Profits</a></p>
           {close}
         </article>
 
