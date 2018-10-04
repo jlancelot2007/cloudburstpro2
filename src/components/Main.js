@@ -29,6 +29,8 @@ class Main extends React.Component {
            <li>CI/CD documentation websites</li>
            <li>Alexa skills</li>
           </ul>to discuss your obligation free requirements use the Contact form.</p>
+          
+          <a href="https://www.mailerlite.com/blog/facebook-deleted-our-mailerlite-page-now-what/">Why you should not rely on Facebook or other social media</a>
          <p>You can find a list of substantial discounts on popular commercial software products available to non profit organisations here : 
           <a href="https://zapier.com/blog/best-nonprofit-discounts/">Discounts for Non Profits</a></p>
           {close}
@@ -38,6 +40,8 @@ class Main extends React.Component {
           <h2 className="major">Work</h2>
           <span className="image main"><img src={pic02} alt="" /></span>
           <p>This website was built from a Gatsby version 2 template that is pushed to Github.com from my machine. From there it is automatically rebuilt on the hosting site at Netlify.com.</p>
+          <p><a href="https://myfizz.biz/">A photo portfolio static site that costs nothing to host</a></p>
+          <p><a href="https://justdoit.nike.com/">Nike choose Gatsby for their latest campaign</a></p>
           <p>Here is an example of a <a href="https://renewedlifefellowship.com.au/">node.js blogging site</a> hosted on Digital Ocean. Various templates are available to provide your styling preference.</p>
           <p>I am looking to quickly build a portfolio of reference sites so I can go freelance. Contact me if you have a project that needs help.</p>
           {close}
@@ -88,7 +92,7 @@ class Main extends React.Component {
           <span className="image main"><img src={pic04} alt="" /></span>
           <p>If you have made it this far you must be keen to know more technical stuff.</p>
           <p><a href="https://seo-hacker.com/google-lighthouse-extension/">Lighthouse</a> is a Google extension for measuring a website. Here are Lighthouse scores out of the box for the site i.e. no SEO headers or service workers (offline caching) have been added to improve the results. In short you get a performant, accessible, well architected, discoverable website on any device that can easily be further enhanced.</p>
-           <ul><li>Performance 93%</li><li>Progressive Web App 73%</li><li>Accessibility 100%</li><li>Best Practices 100%</li><li>SEO 89%</li></ul>
+           <ul><li>Performance 93%</li><li>Progressive Web App 73% (need to add a service worker for offline access)</li><li>Accessibility 100%</li><li>Best Practices 100%</li><li>SEO 89%</li></ul>
           <p>For custom backend development I like to use the Serverless Framework with node.js and AWS to create graphQL APIs to Lambda functions that can interact with DynamoDB, step functions and SES.</p>
           <p>Front end development with Vue.js</p>
           {close}
