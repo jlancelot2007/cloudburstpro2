@@ -15,7 +15,7 @@
     "s3-deploy": "^1.1.1"
   },
   "keywords": [
-    "gatsby"
+    "gatsby", "AWS","church website","serverless"
   ],
   "license": "MIT",
   "scripts": {
