@@ -4,23 +4,30 @@
   "version": "1.0.0",
   "author": "Andrew Plater",
   "dependencies": {
-    "gatsby": "next",
+    "acorn": "^6.0.0",
+    "gatsby": "^2.0.115",
     "gatsby-plugin-manifest": "next",
     "gatsby-plugin-react-helmet": "next",
     "gatsby-plugin-sass": "next",
+    "gatsby-plugin-stripe": "^1.2.0",
+    "gatsby-source-stripe": "^2.1.6",
+    "graphql": "^14.1.0",
     "node-sass": "^4.9.3",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "react-helmet": "^5.2.0",
-    "s3-deploy": "^1.1.1"
+    "react-helmet": "^5.2.0"
   },
   "keywords": [
-    "gatsby", "AWS","church website","serverless"
+    "gatsby",
+    "AWS",
+    "church website",
+    "serverless"
   ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "deploy": "npm run build",
     "format": "prettier --write '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

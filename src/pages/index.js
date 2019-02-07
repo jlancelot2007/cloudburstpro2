@@ -5,6 +5,13 @@ import Header from '../components/Header'
 import Main from '../components/Main'
 import Footer from '../components/Footer'
 
+class Button extends React.Component {
+  componentDidMount(){
+    this.stripe = window.Stripe('pk_test_0eA9ffsuzUzdTIlb1pzlqEOm', {
+      betas: ['checkout_beta_4']
+    })
+}
+}
 class IndexPage extends React.Component {
   constructor(props) {
     super(props)

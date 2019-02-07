@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
+import Button from '../components/checkout'
 import pic01 from '../images/pic01.jpg'
 import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
@@ -19,7 +19,7 @@ class Main extends React.Component {
           <span className="image main"><img src={pic01} alt="" /></span>
           <p>My passion is to see the cloud useful to non tech organisations by using serverless solutions that integrate workflow.</p>
           <p>In practical terms that may mean starting with a simple free hosted static website like this website or a dynamic blog website hosted for US$5 per month.</p>
-          <p>More complex solutions might involve:
+          More complex solutions might involve:
           <ul>
           <li>user authentication</li>
           <li>online video or audio</li>
@@ -28,7 +28,7 @@ class Main extends React.Component {
             <li>integrations with Zoho, Slack, MailChimp, Zapier or Twilio</li>
            <li>CI/CD documentation websites</li>
            <li>Alexa skills</li>
-          </ul>to discuss your obligation free requirements use the Contact form.</p>
+          </ul>to discuss your obligation free requirements use the Contact form.
           
           <a href="https://www.mailerlite.com/blog/facebook-deleted-our-mailerlite-page-now-what/">Why you should not rely on Facebook or other social media</a>
          <p>You can find a list of substantial discounts on popular commercial software products available to non profit organisations here : 
@@ -42,6 +42,7 @@ class Main extends React.Component {
           <p>This website was built from a Gatsby version 2 template that is pushed to Github.com from my machine. From there it is automatically rebuilt on the hosting site at Netlify.com.</p>
           <p><a href="https://myfizz.biz/">A photo portfolio static site that costs nothing to host</a></p>
           <p><a href="https://justdoit.nike.com/">Nike choose Gatsby for their latest campaign</a></p>
+          <p><a href="https://myjesusfamily.com/">Jesus Family Marrickville on AWS Cloudfront</a></p>
           <p>Here is an example of a <a href="https://renewedlifefellowship.com.au/">node.js blogging site</a> hosted on Digital Ocean. Various templates are available to provide your styling preference.</p>
           <p>I am looking to quickly build a portfolio of reference sites so I can go freelance. Contact me if you have a project that needs help.</p>
           {close}
@@ -58,7 +59,7 @@ class Main extends React.Component {
           {close}
         </article>
 
-        <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+        <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''}  ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Contact</h2>
           <form name="contact" method="post"  data-netlify="true" data-netlify-honeypot="botfield">
             <input type="hidden" name="bot-field" />
@@ -74,6 +75,7 @@ class Main extends React.Component {
               <label htmlFor="message">Message</label>
               <textarea name="message" id="message" rows="4"></textarea>
             </div>
+            <div data-netlify-recaptcha="true"></div>
             <ul className="actions">
               <li><input type="submit" value="Send Message" className="special" /></li>
               <li><input type="reset" value="Reset" /></li>
@@ -87,6 +89,19 @@ class Main extends React.Component {
           </ul>
           {close}
         </article>
+        <article id="purchase" className={`${this.props.article === 'purchase' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+        <h2 className="major">Purchase</h2>
+        <form name="purchase" method="psubmi"  data-netlify="true" data-netlify-honeypot="botfield">
+          <input type="hidden" name="bot-field" />
+          <div className="field half first">
+          <h1>Purchase a basic website</h1>
+          <Button id="checkout-button">Pay</Button>
+          <div id="error-message"></div>
+          </div>
+
+        </form>
+        {close}
+      </article>
         <article id="more" className={`${this.props.article === 'more' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">More</h2>
           <span className="image main"><img src={pic04} alt="" /></span>

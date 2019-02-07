@@ -39,10 +39,10 @@ const Layout = ({ children, location }) => {
       render={data => (
         <>
           <Helmet
-            title={data.site.siteMetadata.title}
+            title='Cloudburstpro'
             meta={[
-              { name: 'description', content: 'Sample' },
-              { name: 'keywords', content: 'sample, something' },
+              { name: 'description', content: 'AWS web development' },
+              { name: 'keywords', content: ['amazon web services', 'AWS Alexa', 'static websites', 'serverless','AWS Lambda microservices'] },
             ]}
           >
             <html lang="en" />
