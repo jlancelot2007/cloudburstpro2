@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Button from '../components/checkout'
+import ProductsList from '../pages/productslist'
 import pic01 from '../images/pic01.jpg'
 import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
@@ -91,15 +92,13 @@ class Main extends React.Component {
         </article>
         <article id="purchase" className={`${this.props.article === 'purchase' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
         <h2 className="major">Purchase</h2>
-        <form name="purchase" method="psubmi"  data-netlify="true" data-netlify-honeypot="botfield">
-          <input type="hidden" name="bot-field" />
-          <div className="field half first">
-          <h1>Purchase a basic website</h1>
-          <Button id="checkout-button">Pay</Button>
-          <div id="error-message"></div>
-          </div>
+         <div>
+         <ProductsList></ProductsList>
 
-        </form>
+          </div>
+       
+    
+      
         {close}
       </article>
         <article id="more" className={`${this.props.article === 'more' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>

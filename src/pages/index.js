@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
-
+import ProductsList from '../pages/productslist'
 import Header from '../components/Header'
 import Main from '../components/Main'
 import Footer from '../components/Footer'
