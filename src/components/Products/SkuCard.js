@@ -1,5 +1,7 @@
 import React from "react"
 
+
+
 const cardStyles = {
   display: "flex",
   flexDirection: "column",
@@ -34,7 +36,12 @@ const formatPrice = (amount, currency) => {
   return numberFormat.format(price)
 }
 
+
+
 const SkuCard = class extends React.Component {
+    
+
+
   async redirectToCheckout(event, sku, quantity = 1) {
     event.preventDefault()
     const { error } = await this.props.stripe.redirectToCheckout({
@@ -58,7 +65,7 @@ const SkuCard = class extends React.Component {
           style={buttonStyles}
           onClick={event => this.redirectToCheckout(event, sku.id)}
         >
-          BUY ME
+          BUY ME now
         </button>
       </div>
     )

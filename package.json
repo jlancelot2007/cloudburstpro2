@@ -3,6 +3,9 @@
   "description": "Cloudburstpro",
   "version": "1.0.0",
   "author": "Andrew Plater",
+  "engines": {
+    "node": "=10.13.0"
+  },
   "dependencies": {
     "acorn": "^6.0.0",
     "gatsby": "^2.0.115",

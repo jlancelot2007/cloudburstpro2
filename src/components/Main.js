@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Button from '../components/checkout'
+
+
 import ProductsList from '../pages/productslist'
 import pic01 from '../images/pic01.jpg'
 import pic02 from '../images/pic02.jpg'
