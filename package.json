@@ -3,6 +3,7 @@
   "description": "Cloudburstpro",
   "version": "1.0.0",
   "author": "Andrew Plater",
+  "engineStrict": true,
   "engines": {
     "node": "=10.13.0"
   },
@@ -18,7 +19,8 @@
     "node-sass": "^4.9.3",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "semver": "^5.6.0"
   },
   "keywords": [
     "gatsby",
@@ -30,6 +32,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "requirements-check": "node check_node_version.js",
     "deploy": "npm run build",
     "format": "prettier --write '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
