@@ -18,6 +18,12 @@ module.exports = {
       downloadFiles: true
     },
   },
+   {
+     resolve: `gatsby-plugin-s3`,
+     options: {
+         bucketName: 'cloudburstpro.com'
+     },
+ },
       'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
